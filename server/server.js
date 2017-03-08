@@ -12,7 +12,9 @@ const port = process.env.NODE_ENV === 'production' ? 80 : 3000;
 
 const listen = app.listen(port, () => {
   console.log('Server listening on port ' + port);
-  process.env.NODE_ENV !== 'test' && db.sync();
+  process.env.NODE_ENV !== 'test' && db.sync(
+    // {force: true}
+  );
 });
 
 // initialize server-side sockets

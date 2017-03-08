@@ -4,6 +4,9 @@ client/dist
 # Keys
 keys.js
 
+# PEM file
+thesis.pem
+
 # floobits
 .floo
 .flooignore
